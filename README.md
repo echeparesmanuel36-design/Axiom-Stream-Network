@@ -8,9 +8,25 @@ Our business model is strictly focused on **B2B Intellectual Property transfers*
 
 ---
 
-## 🛠️ System Architecture & Core Logic (Rust Bare-Metal)
+## 🛠️ System Architecture & Core Modules
 
-To guarantee sub-10ms latency during concurrent HD video decoding and spatial anchor matrix multiplication, the core engine bypasses standard OS memory allocation limits using a **zero-copy asynchronous pipeline**.
+The ASN infrastructure is divided into three production-ready layers designed to operate as a single unified system:
+
+### 1. Core Streaming Engine
+* **Zero-Copy Memory Layout:** Implemented in native Rust to handle raw HD video frames and concurrent spatial coordinate streams simultaneously without OS buffer bottlenecks.
+* **Microsecond State Synchronization:** Tailor-made network protocol ensuring that the streamer’s physical movements and the viewer's AR spatial anchoring match with sub-10ms latency.
+
+### 2. Intelligent Live Interaction
+* **Edge-AI Companion Integration:** Low-overhead processing architecture for real-time chat analysis, auto-moderation, and physical interactive 3D triggers driven by user engagement. No external cloud dependencies, protecting data sovereignty.
+
+### 3. Spatial Rendering Interface
+* **Holographic Projection Pipeline:** Advanced matrix transformation module to isolate the streamer's outline and project them as a proportional real-scale 3D asset inside the viewer's domestic environment using mobile devices or smart eyewear.
+
+---
+
+## ⚙️ Core Logic (Rust Bare-Metal Hardware Multiplexer)
+
+To guarantee sub-10ms latency during concurrent HD video decoding and spatial anchor matrix multiplication, the core engine bypasses standard OS memory allocation limits using a zero-copy asynchronous pipeline.
 
 Below is the production-grade architectural layout for the spatial data multiplexer:
 
